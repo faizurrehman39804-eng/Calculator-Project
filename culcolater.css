@@ -35,13 +35,27 @@
   margin: 10px;
 }
 #display {
-  border: 1px solid rgb(255, 247, 0);
+  border: 1px solid rgb(255, 247, 0); 
 }
+
+.culculater form input:hover {
+  transform: translateY(-0px);   
+  border: 2px solid yellow;     
+  box-shadow: 0 0 15px rgb(0, 0, 0);   
+  transform: translateY(0px); 
+}
+
+.culculater:hover {
+   transition: transform 0.4s ease; 
+  transition: 0.5s;               
+  box-shadow: 0 0 40px yellow;   
+}
+
 #equa {
   background: linear-gradient(135deg, #f6ff00, #ffaa00);
 }
 form .display {
-  display: flex;
+  display: flex;  
   justify-content: flex-end;
   margin: 20px 0;
 }
@@ -54,6 +68,9 @@ form .display input {
 form input.equal {
   width: 145px;
 }
+
+
+
 
 @media screen and (max-width: 400px) {
   .culculater form input {
